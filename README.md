@@ -9,7 +9,7 @@ Tambien cuenta con una pestaña que hable de la historia de la libreria, otra pa
 
 ## Paleta de colores a utilizar.
 
-<bold>CSS HEX</bold>
+**CSS HEX**
 
 - white-smoke: #F5F5F5;
 - reseda-green: #6e8f67ff;
