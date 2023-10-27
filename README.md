@@ -6,6 +6,7 @@ Tambien cuenta con una pestaña que hable de la historia de la libreria, otra pa
 
 ## Tipografía principal.
 
+font-family: Lobster;
 
 ## Paleta de colores a utilizar.
 
