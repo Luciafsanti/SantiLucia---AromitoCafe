@@ -1,12 +1,16 @@
 # SantiLucia - AromitoLibreria
 
 ## Descripcion.
-Ecommerce de una libreria, se puede acceder para ver precios o pedir a domicilio.
-Tambien cuenta con una pestaña que hable de la historia de la libreria, otra para ver noticias de talleres que se realicen.
+Ecommerce de una libreria, se puede comprar online, ver informacion de talleres que se realicen y el menu de la cafeteria.
+
 
 ## Tipografía principal.
 
+Título:
 font-family: Lobster;
+
+Cuerpo:
+font-family: Inter;
 
 ## Paleta de colores a utilizar.
 
@@ -16,5 +20,6 @@ font-family: Lobster;
 - reseda-green: #6e8f67ff;
 - timberwolf: #dedad2ff;
 - gold-metallic: #c5ab54ff;
+- background: #EDEDED;
 
 ## Logo o Brand (nombre) del ecommerce.
