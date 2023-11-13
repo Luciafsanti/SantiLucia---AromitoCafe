@@ -3,6 +3,7 @@
 ## Descripcion.
 Ecommerce de una libreria, se puede comprar online, ver informacion de talleres que se realicen y el menu de la cafeteria.
 
+Link al diseño en Figma: https://www.figma.com/file/jfgDZ6D8yzaoODyny2M1ZB/Aromito-Libreria?type=design&node-id=0%3A1&mode=design&t=Sj90dvUTjmc2X0He-1
 
 ## Tipografía principal.
 
