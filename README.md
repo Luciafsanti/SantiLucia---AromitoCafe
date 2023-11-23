@@ -24,3 +24,5 @@ font-family: Inter;
 - background: #EDEDED;
 
 ## Logo o Brand (nombre) del ecommerce.
+
+![image](https://github.com/Luciafsanti/SantiLucia-AromitoLibreria/assets/144744219/ad1e141d-1359-45cb-aa8c-cdb0a97e8fd5)
