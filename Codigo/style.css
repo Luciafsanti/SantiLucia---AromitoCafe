@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: arial;
+    overflow-clip-margin: content-box;
+}
+
+/*barra de navegacion*/
+.flex-container-nav {
+    height: 100px;
+    background: var(--Reseda-green, rgba(110, 143, 103, 0.75));
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    border: none;
+    color: var(--WhiteSmoke, #F5F5F5);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0.4rem 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.nav-button:hover {
+    background-color: rgba(110, 143, 103);
+}
+
+nav h1 {
+    padding: 0.4rem;
+    font-size: 40px;
+    font-family: "Lobster";
+    font-weight: 200;
+    color: var(--WhiteSmoke, #F5F5F5);
+}
+
+.home img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+}
+
+.home {
+    text-decoration: none;
+}
+
+.home a {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+nav input {
+    margin-right: 0rem;
+    width: 16rem;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body {
+    background: #EDEDED;
+    margin: 0px;
+}
+
+/*footer*/
+
+footer {
+    background-color: rgba(110, 143, 103, 0.75);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20vh;
+    padding: 1rem;
+}
+
+
+
+.information-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.information-links a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.copyright {
+    margin-top: 12vh;
+}
+
+/*inicio*/
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*Noticias*/
+
+.noticias-container {
+    width: 98%;
+}
+
+.noticias-container img {
+    width: 90%;
+}
+
+
+.noticias-container picture {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*libros populares*/
+
+.popular-books {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.popular-books h2 {
+    right: 50%;
+}
+
+.popular-container {
+    width: 98%;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    border: 0px;
+    border-radius: 0.25rem;
+    background: #F5F5F5;
+    width: 158.509px;
+    height: 230px;
+    margin: 1rem;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1),
+        0.1em 0.1em 0.3em rgba(0, 0, 0, 0.3);
+    display: flex;
+    text-decoration: none;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.book-card:hover {
+    background-color: #EDEDED;
+}
+
+
+.book-card a,
+h3,
+h4,
+p {
+    text-decoration: none;
+    margin: 0px;
+}
+
+.book-card img {
+    max-height: 10rem;
+
+}
+
+.book-card a {
+    color: black;
+    font-weight: normal;
+}
+
+.book-card p {
+    color: rgba(110, 143, 103);
+    font-weight: bold;
+}
+
+.prev-button {
+    position: relative;
+    cursor: pointer;
+    margin: 110px .5rem;
+}
+
+.next-button {
+    position: relative;
+    cursor: pointer;
+    margin: 110px .5rem;
+}
+
+.next-button,
+.prev-button {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.svg {
+    height: 100% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:1080px){
+    .flex-container-nav{
+        height: 120px;
+    }
+
+    .button-container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    nav div {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .flex-container-nav {
+        height: 150px;
+    }
+}
+
+/*@media (max-width:760px){
+    .book-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

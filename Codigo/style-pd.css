@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: arial;
+    overflow-clip-margin: content-box;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-areas:
+        "e e e e  e e e e  e e e e"
+        "b b b b  t t t t  d d d d"
+        "r r r r  r r r r  r r r r"
+    ;
+    gap: 0px;
+}
+
+.etiquetas {
+    grid-area: e;
+    margin: 0.5rem 1rem;
+    width: 90%;
+}
+
+.book,
+.description,
+.recent-views,
+.title {
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.book {
+    width: 30vw;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: b;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+}
+
+.book img {
+    height: 350px;
+}
+
+.book .like {
+    position: relative;
+    left: 200px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.title {
+    grid-area: t;
+    height: 450px;
+    width: 34.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+}
+
+.envio-pago {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.title button {
+    padding: 0.8rem 3rem;
+    border: 0px;
+    border-radius: 0.25rem;
+    background: var(--Reseda-green, rgba(110, 143, 103, 0.75));
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.title button:hover{
+    background-color: rgba(110, 143, 103);
+}
+
+.title h2, .title h3, .title p{
+    width: 80%;
+    text-align:left;
+    margin-bottom: 0.5rem;
+}
+
+.title p{
+    color: var(--Reseda-green, rgba(110, 143, 103, 0.75));
+    font-size: 30px;
+}
+
+.title h2{
+    margin-top: 2rem;
+}
+
+.description {
+    grid-area: d;
+    height: 450px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 1rem;
+}
+
+.description table {
+    border-collapse: collapse;
+    width: 80%;
+    text-align: left;
+    position: relative;
+    left: 10%;
+  }
+
+.description table tbody tr:nth-child(odd){
+    background: #cfcfcf;
+}
+
+.description h3{
+    margin-top: 2rem;
+}
+
+.description h3, .description p{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.recent-views-container{
+    grid-area: r;
+    width: 100%;
+}
+
+.recent-views-container h2{
+    margin-left: 1rem;
+}
+
+.recent-views {
+    width: 98%;
+    border-radius: 0.4rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    
+}
+
+.prev-button, .next-button{
+    margin: 0px;
+}
+
+@media (max-width: 760px) {
+    main {
+        grid-template-areas:
+            "e"
+            "b"
+            "t"
+            "d"
+            "r";
+    }
+
+    .book,
+    .title,
+    .description,
+    .recent-views {
+        width: 95%;
+        margin: 2.5%;
+    }
+
+    .title {
+        margin-top: 0px;
+    }
+
+    .book {
+        margin-bottom: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .etiquetas {
+        text-align: center;
+    }
+}
