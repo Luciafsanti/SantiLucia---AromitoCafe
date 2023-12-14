@@ -1,0 +1,68 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h2{
+    width: 70%;
+    max-width: 400px;
+    text-align: left;
+    margin-top: 3rem;
+    color: var(--Reseda-green);
+}
+
+.login-form{
+    width: 70%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+#remember-user{
+    display: flex;
+    flex-direction: row;
+}
+
+.login-form div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 80%;
+}
+
+.access-button{
+    padding: 0.4rem 1rem;
+    width: 40%;
+    background-color: var(--Reseda-green);
+    border: 0px;
+    border-radius: 0.25rem;
+    color: whitesmoke;
+}
+
+#links{
+    align-items: center;
+}
+
+#links a{
+    color: var(--Reseda-green);
+    text-decoration: none;
+}
+
+.login-form input[type=email], .login-form input[type=password]{
+    border: 0.1px solid #e0e0e0c4;
+    box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1),
+    0.05em 0.1em 0.1em rgba(0, 0, 0, 0.1);;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
+
