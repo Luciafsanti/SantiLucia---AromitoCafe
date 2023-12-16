@@ -1,0 +1,87 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "p i";
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    width: 85%;
+    height: 520px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.products {
+    grid-area: p;
+}
+
+.products .book-card {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 105px;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.products .book-card img {
+    margin: 2.5px 2rem 0 1rem;
+    height: 100px;
+}
+
+.products .book-card input[type=number] {
+    width: 2.5rem;
+}
+
+.products table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.products table tbody tr:nth-child(1) {
+    border-bottom: 1px solid #BABABA;
+}
+
+.info {
+    grid-area: i;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info table {
+    margin-top: 3rem;
+    border-collapse: collapse;
+
+}
+
+.info table tbody tr:nth-child(1),
+.info table tbody tr:nth-child(2) {
+    border-bottom: 1px solid #BABABA;
+}
+
+.info table tbody td:nth-child(1),
+.info table tbody tr:nth-child(2),
+.info table tbody tr:nth-child(3) {
+    padding: 0.4rem;
+}
+
+
+.buy-button {
+    padding: 0.6rem 1rem;
+    width: 230px;
+    background-color: var(--Reseda-green);
+    border: 0px;
+    border-radius: 0.25rem;
+    color: whitesmoke;
+}
+
+@media (max-width:760px) {
+    .container {
+        grid-template-areas:
+            "p"
+            "i";
+    }
+}
