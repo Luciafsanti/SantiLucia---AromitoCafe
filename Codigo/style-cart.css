@@ -12,10 +12,11 @@
 
 .products {
     grid-area: p;
+    width: 100%;
 }
 
 .products .book-card {
-    width: 80%;
+    width: 90%;
     flex-direction: row;
     flex-wrap: wrap;
     height: 105px;
