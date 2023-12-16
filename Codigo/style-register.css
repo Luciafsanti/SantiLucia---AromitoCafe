@@ -38,10 +38,6 @@ h2{
     0.05em 0.1em 0.1em rgba(0, 0, 0, 0.1);;
 }
 
-#captcha input{
-    
-}
-
 .register-form div{
     display: flex;
     flex-direction: column;
