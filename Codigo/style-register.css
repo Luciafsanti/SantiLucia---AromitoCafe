@@ -13,9 +13,9 @@ h2{
     color: var(--Reseda-green);
 }
 
-.login-form{
+.register-form{
     width: 70%;
-    height: 370px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,12 +26,23 @@ h2{
     max-width: 400px;
     margin-bottom: 2rem;
 }
-#remember-user{
+#captcha{
     display: flex;
     flex-direction: row;
+    padding: 1.5rem;
+    border: 0.5px solid #e6e6e6;
+    width: 200px;
+    position: relative;
+    right: 80px;
+    box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1),
+    0.05em 0.1em 0.1em rgba(0, 0, 0, 0.1);;
 }
 
-.login-form div{
+#captcha input{
+    
+}
+
+.register-form div{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -40,7 +51,7 @@ h2{
     width: 80%;
 }
 
-.access-button{
+.register-button{
     padding: 0.6rem 1rem;
     width: 40%;
     background-color: var(--Reseda-green);
@@ -49,16 +60,8 @@ h2{
     color: whitesmoke;
 }
 
-#links{
-    align-items: center;
-}
 
-#links a{
-    color: var(--Reseda-green);
-    text-decoration: none;
-}
-
-.login-form input[type=email], .login-form input[type=password]{
+.register-form input[type=email], .register-form input[type=password], .register-form input[type=text]{
     border: 0.1px solid #e0e0e0c4;
     box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1),
     0.05em 0.1em 0.1em rgba(0, 0, 0, 0.1);;
