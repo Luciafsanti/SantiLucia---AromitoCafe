@@ -1,10 +1,11 @@
 main {
     display: grid;
     grid-template-areas:
-        "e e e e  e e e e  e e e e"
-        "b b b b  t t t t  d d d d"
-        "r r r r  r r r r  r r r r"
-    ;
+        "e"
+        "b"
+        "t"
+        "d"
+        "r";
     gap: 0px;
 }
 
@@ -12,6 +13,7 @@ main {
     grid-area: e;
     margin: 0.5rem 1rem;
     width: 90%;
+    text-align: center;
 }
 
 .book,
@@ -21,10 +23,13 @@ main {
     background-color: var(--WhiteSmoke);
     margin-bottom: 1rem;
     margin-top: 1rem;
+    width: 95%;
+    margin: 2.5%;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .book {
-    width: 30vw;
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -32,8 +37,9 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     grid-area: b;
-    margin-right: 1rem;
     border-radius: 0.5rem;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .book img {
@@ -48,9 +54,8 @@ main {
 }
 
 .title {
-    grid-area: t;
     height: 450px;
-    width: 34.3vw;
+    grid-area: t;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,29 +86,30 @@ main {
     cursor: pointer;
 }
 
-.title button:hover{
+.title button:hover {
     background-color: rgba(110, 143, 103);
 }
 
-.title h2, .title h3, .title p{
+.title h2,
+.title h3,
+.title p {
     width: 80%;
-    text-align:left;
+    text-align: left;
     margin-bottom: 0.5rem;
 }
 
-.title p{
+.title p {
     color: var(--Reseda-green, rgba(110, 143, 103, 0.75));
     font-size: 30px;
 }
 
-.title h2{
+.title h2 {
     margin-top: 2rem;
 }
 
 .description {
     grid-area: d;
     height: 450px;
-    width: auto;
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -116,27 +122,28 @@ main {
     text-align: left;
     position: relative;
     left: 10%;
-  }
+}
 
-.description table tbody tr:nth-child(odd){
+.description table tbody tr:nth-child(odd) {
     background: #cfcfcf;
 }
 
-.description h3{
+.description h3 {
     margin-top: 2rem;
 }
 
-.description h3, .description p{
+.description h3,
+.description p {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
 
-.recent-views-container{
+.recent-views-container {
     grid-area: r;
     width: 100%;
 }
 
-.recent-views-container h2{
+.recent-views-container h2 {
     margin-left: 1rem;
 }
 
@@ -150,39 +157,44 @@ main {
     align-items: center;
 }
 
-.prev-button, .next-button{
+.prev-button,
+.next-button {
     margin: 0px;
 }
 
-@media (max-width: 760px) {
+@media (min-width: 760px) {
     main {
         grid-template-areas:
-            "e"
-            "b"
-            "t"
-            "d"
-            "r";
-    }
-
-    .book,
-    .title,
-    .description,
-    .recent-views {
-        width: 95%;
-        margin: 2.5%;
-    }
-
-    .title {
-        margin-top: 0px;
+            "e e e e  e e e e  e e e e"
+            "b b b b  t t t t  d d d d"
+            "r r r r  r r r r  r r r r"
+        ;
     }
 
     .book {
-        margin-bottom: 0px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
+        width: 30vw;
+        height: 450px;
+        border-radius: 0.5rem;
     }
 
-    .etiquetas {
-        text-align: center;
+    .title {
+        height: 450px;
+        width: 34.3vw;
+        margin: auto;
+        margin-right: 0px;
+        margin-left: 2vw;
+    }
+
+    .description {
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .book,
+    .description,
+    .title,
+    .recent-views {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 }
