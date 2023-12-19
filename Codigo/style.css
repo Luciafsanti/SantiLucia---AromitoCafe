@@ -9,12 +9,14 @@
 
 :root{
     --Reseda-green: rgba(110, 143, 103, 0.75);
+    --Reseda-green-hover:rgba(110, 143, 103);
+    --WhiteSmoke: #F5F5F5;
 }
 
 /*barra de navegacion*/
 .flex-container-nav {
     height: 100px;
-    background: var(--Reseda-green, rgba(110, 143, 103, 0.75));
+    background: var(--Reseda-green);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -23,7 +25,7 @@
 
 .nav-button {
     border: none;
-    color: var(--WhiteSmoke, #F5F5F5);
+    color: var(--WhiteSmoke);
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -35,7 +37,7 @@
 
 
 .nav-button:hover {
-    background-color: rgba(110, 143, 103);
+    background-color: var(--Reseda-green-hover);
 }
 
 nav h1 {
@@ -43,7 +45,7 @@ nav h1 {
     font-size: 40px;
     font-family: "Lobster";
     font-weight: 200;
-    color: var(--WhiteSmoke, #F5F5F5);
+    color: var(--WhiteSmoke);
 }
 
 .home img {
@@ -84,7 +86,7 @@ body {
 
 footer {
     background-color: rgba(110, 143, 103, 0.75);
-    color: whitesmoke;
+    color: var(--WhiteSmoke);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -102,7 +104,7 @@ footer {
 
 .information-links a {
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--WhiteSmoke);
 }
 
 .copyright {
@@ -155,7 +157,7 @@ main {
 
 .popular-container {
     width: 98%;
-    background-color: whitesmoke;
+    background-color: var(--WhiteSmoke);;
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
@@ -173,7 +175,7 @@ main {
 .book-card {
     border: 0px;
     border-radius: 0.25rem;
-    background: #F5F5F5;
+    background: var(--WhiteSmoke);
     width: 158.509px;
     height: 230px;
     margin: 1rem;
@@ -267,9 +269,3 @@ p {
     }
 }
 
-/*@media (max-width:760px){
-    .book-container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}

@@ -1,11 +1,12 @@
 .container {
     display: grid;
     grid-template-areas:
-        "p i";
-    background-color: whitesmoke;
+        "p"
+        "i";
+    background-color: var(--WhiteSmoke);
     border-radius: 0.5rem;
     width: 85%;
-    height: 520px;
+    height: 700px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -13,6 +14,11 @@
 .products {
     grid-area: p;
     width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .products .book-card {
@@ -23,10 +29,11 @@
     justify-content: space-around;
     align-content: flex-start;
     align-items: center;
+    margin: 0px;
 }
 
 .products .book-card img {
-    margin: 2.5px 2rem 0 1rem;
+    margin: 2.5px 1rem 0 1rem;
     height: 100px;
 }
 
@@ -76,13 +83,17 @@
     background-color: var(--Reseda-green);
     border: 0px;
     border-radius: 0.25rem;
-    color: whitesmoke;
+    color: var(--WhiteSmoke);
 }
 
-@media (max-width:760px) {
+.buy-button:hover{
+    background-color: var(--Reseda-green-hover);
+}
+
+@media (min-width:760px) {
     .container {
         grid-template-areas:
-            "p"
-            "i";
+            "p i";
+        height: 420px;
     }
 }

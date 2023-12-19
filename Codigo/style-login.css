@@ -19,7 +19,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: var(--WhiteSmoke);
     border-radius: 0.5rem;
     gap: 1.5rem;
     align-items: center;
@@ -46,7 +46,11 @@ h2{
     background-color: var(--Reseda-green);
     border: 0px;
     border-radius: 0.25rem;
-    color: whitesmoke;
+    color: var(--WhiteSmoke);
+}
+
+.access-button:hover{
+    background-color: var(--Reseda-green-hover);
 }
 
 #links{
